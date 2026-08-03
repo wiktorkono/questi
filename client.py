@@ -8,7 +8,7 @@ session.auth = ("demo", "demo")  # replace with real login later
 
 
 def clear_screen():
-    subprocess.run(["cls" if sys.platform == "win32" else "clear"])  # os.system is deprecated apparently
+    subprocess.run(["cls"]) if sys.platform == "win32" else subprocess.run(["clean"])  # os.system is deprecated apparently
 
 
 def invalid_choice(choice):
